@@ -1,0 +1,182 @@
+
+
+<!DOCTYPE html>
+<html>
+<head> 
+      
+    <style> 
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+    } 
+
+        .header { 
+            background-image: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            margin: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+        }
+
+ 
+        .tabs {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 10px 0;
+        }
+
+        .tab {
+            color: white;
+            padding: 14px 20px;
+            cursor: pointer;
+            margin: 0 10px;
+            text-align: center;
+            background-color: #444;
+            transition: background-color 0.3s;
+            text-decoration: none;
+        }
+
+        .tab:hover {
+            background-color: #555;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .section {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+        }
+
+        
+        .section:nth-child(odd) .content-text {
+            order: 1;
+        }
+
+        .section:nth-child(odd) .content-image {
+            order: 2;
+        }
+
+       
+        .section:nth-child(even) .content-image {
+            order: 1;
+            margin-right: 20px;
+        }
+
+        .section:nth-child(even) .content-text {
+            order: 2;
+        }
+
+ 
+        .content-text {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        .content-text h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .content-text p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .content-image {
+            flex: 1;
+        }
+
+        .content-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .centered-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 400px;
+            text-align: center;
+        }
+
+        .centered-section .content-text {
+            margin: 0;
+            flex: 0 0 60%; 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Welcome to Our Book-a-Thon</h1>
+    </div>
+
+    <div class="tabs">
+        <a href="Register.html" class="tab">Registration</a>
+        <a href="Login.html" class="tab">Log In</a>
+        <a href="catalog.html" class="tab">Catalog</a>
+        <a href="#about" class="tab">About Us</a>
+    </div>
+
+    <div class="content">
+
+        
+        <div class="section">
+            <div class="content-text">
+                <h2>Discover Our Vast Collection of Books</h2>
+                <p>From fiction to non-fiction, classic literature to the latest releases, we offer a wide range of books catering to every reader’s taste. Dive into the world of knowledge, imagination, and inspiration with our carefully curated selection. 
+                    From timeless classics that have shaped the literary world to contemporary works that reflect the pulse of modern society, our collection spans across genres, cultures, and eras. Each book is a gateway to new perspectives, offering readers the chance to explore diverse worlds, engage with thought-provoking ideas, and connect with characters that resonate on a deeply personal level.
+                    For those seeking inspiration, our non-fiction selection brings you closer to the minds of innovators, thinkers, and leaders who have transformed industries and influenced generations. Whether you're diving into biographies of trailblazers, unraveling the complexities of science and technology, or exploring the wisdom of self-improvement, you'll find plenty of motivation to fuel your ambitions.
+                    If you're looking to escape reality, our fiction section opens up endless realms of adventure, mystery, romance, and fantasy. </p>
+            </div>
+            <div class="content-image">
+                <img src="C:/Users/aafta/OneDrive/Documents/FWP/Week 1/book1.jpg" alt="Books Image 1">
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="content-image">
+                <img src="C:/Users/aafta/OneDrive/Documents/FWP/Week 1/book2.jpg" alt="Books Image 2">
+            </div>
+            <div class="content-text">
+                <h2>Explore New Arrivals and Bestsellers</h2>
+                <p>Our collection is constantly updated with new arrivals and bestselling books from renowned authors. Stay ahead with the latest trends in literature and find your next favorite read among the top picks from around the globe. No matter your genre preference, our collection is designed to inspire and entertain.
+                    Whether you're into gripping thrillers, heartwarming romances, mind-bending science fiction, or enlightening self-help, our library is thoughtfully curated to ensure there's something for everyone. From award-winning novels that have captured the hearts of millions to hidden gems waiting to be discovered, our shelves are filled with stories that evoke emotion, challenge ideas, and spark imagination.
+                    For the adventurous reader, we offer a world of escapism through fantastical tales and epic adventures. For those seeking intellectual stimulation, we present thought-provoking works that delve into philosophy, politics, and history, enriching your understanding of the world.
+                    Our collection also boasts an array of children's books, perfect for young readers eager to embark on literary journeys of their own, fostering creativity and a lifelong love of reading.                   
+                    With frequent updates and carefully selected recommendations, you’ll never run out of exciting reads. Whether you prefer the comfort of a well-loved classic or the thrill of discovering a fresh voice, our ever-evolving collection ensures that you’ll always have something new and captivating to explore. So, dive into our world of books, and let your literary adventure begin!
+                    Beyond fiction and non-fiction, we also cater to readers with niche interests. From art and photography, cooking and crafts, to personal growth and wellness, our specialized sections offer a wealth of knowledge for those looking to deepen their expertise or explore a new passion. Whether you're honing a skill, mastering a hobby, or simply looking for inspiration, our wide variety of books will keep you engaged and motivated.
+                    For the academically inclined, our academic and reference materials cover a range of subjects, from science and mathematics to history and social sciences. We take pride in supporting students, educators, and professionals with reliable, high-quality resources that enhance learning and foster intellectual growth.
+                </p>
+            </div>
+        </div>
+
+        <div class="centered-section">
+            <div class="content-text">
+                <h2>Exceptional Customer Service</h2>
+                <p>At Book-a-Thon, we pride ourselves on providing top-notch customer service. Our dedicated team is here to assist you with any inquiries, help you find your next great read, and ensure that your shopping experience is smooth and enjoyable.</p>
+            </div>
+        </div>
+
+    </div>
+ 
+</body>
+</html>

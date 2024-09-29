@@ -1,0 +1,50 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-image: url('Book.jpg'); 
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: rgba(204, 204, 204, 0.589); 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+table {
+    margin: auto;
+}
+
+td {
+    padding: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+textarea {
+    width: 100%;
+    resize: none;
+}
