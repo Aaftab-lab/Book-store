@@ -1,95 +1,111 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <style>
-            .image {
-                text-align: center;
-                margin: 18px 0 11px 0;
-            }
+<head>
+    <style>
+        .image {
+            text-align: center;
+            margin: 18px 0 11px 0;
+        }
 
-            img.avatar {
-                width: 40%;
-                border-radius: 50%;
-            }
+        img.avatar {
+            width: 40%;
+            border-radius: 50%;
+        }
 
-            h1 {
-                padding: 0.2px;
-                text-align: center;
-                font-size: 2rem;
-            }
+        h1 {
+            padding: 0.2px;
+            text-align: center;
+            font-size: 2rem;
+        }
 
-            form {
-                border: 1px solid rgb(193, 193, 194);
-                padding: 20px;
-                width: 50%;
-                margin: 0 auto;
-                box-sizing: border-box;
-            }
+        form {
+            border: 1px solid rgb(193, 193, 194);
+            padding: 20px;
+            width: 50%;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
 
-            input[id=username],
-            input[type=password] {
-                width: 80%;
-                padding: 12px 20px;
-                margin: 8px 0;
-                display: inline-block;
-                border: 1px solid #ccc;
-                box-sizing: border-box;
-            }
+        .input-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
 
-            button {
-                background-color: #3ac0e2;
-                color: white;
-                padding: 15px 50px;
-                margin: 10px 0;
-                border: none;
-                cursor: pointer;
-                width: 100%;
-                font-size: medium;
-            }
+        .input-container label {
+            font-size: 1.2rem;
+            width: 30%;
+            text-align: right;
+            margin-right: 10px;
+        }
 
-            button:hover {
-                opacity: 0.9;
-            }
+        input[id=username],
+        input[type=password] {
+            width: 70%;
+            padding: 12px 20px;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
 
-            .container {
-                text-align: center;
-            }
+        button {
+            background-color: #3ac0e2;
+            color: white;
+            padding: 15px 50px;
+            margin: 10px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            font-size: medium;
+        }
 
-            .checkbox-container {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                margin: 10px 0;
-                font-size: large;
-            }
+        button:hover {
+            opacity: 0.9;
+        }
 
-        </style>
-    </head>
-    <body>
-        <div style="font-size: x-large;">
-            <form action="catalog.html" method="get">
-                <div class="image">
-                    <img src="avatar.jpeg" alt="avatar" class="avatar">
+        .container {
+            text-align: center;
+        }
+
+        .checkbox-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px 0;
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <div style="font-size: x-large;">
+        <form action="catalog.html" method="get">
+            <div class="image">
+                <img src="avatar.jpeg" alt="avatar" class="avatar">
+            </div>
+
+            <h1>Login Form</h1>
+
+            <div class="container">
+                <div class="input-container">
+                    <label for="username"><b>Username:</b></label>
+                    <input type="text" placeholder="Enter username" id="username" name="Username">
+                </div>
+
+                <div class="input-container">
+                    <label for="password"><b>Password:</b></label>
+                    <input type="password" placeholder="Enter password" id="password" name="password">
                 </div>
                 
-                <h1>Login Form</h1>
-
-                <div class="container">
-                    <label for="username"><b>Username:</b></label><br>
-                    <input type="text" placeholder="Enter username" id="username" name="Username"><br>
-
-                    <label for="password"><b>Password:</b></label>
-                    <input type="password" placeholder="Enter password" id="password" name="password"><br><br>
-                    
-                    <button type="submit">Login</button><br>
-                    <button type="reset">Cancel</button>
-                    
-                    <div class="checkbox-container">
-                        <label for="checked"><b>Remember me</b></label>
-                        <input type="checkbox" id="checked" name="Remember">
-                    </div>
+                <button type="submit">Login</button>
+                <button type="reset">Cancel</button>
+                
+                <div class="checkbox-container">
+                    <label for="checked"><b>Remember me</b></label>
+                    <input type="checkbox" id="checked" name="Remember">
                 </div>
-            </form>
-        </div>
-    </body>
+            </div>
+        </form>
+    </div>
+</body>
 </html>
