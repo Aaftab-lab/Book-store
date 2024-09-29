@@ -3,43 +3,36 @@
     <head>
         <style>
             .image {
-
                 text-align: center;
                 margin: 18px 0 11px 0;
-    
             }
 
             img.avatar {
                 width: 40%;
-                 border-radius: 50%;
+                border-radius: 50%;
             }
 
             h1 {
-                padding: 0.2px 260px;
+                padding: 0.2px;
+                text-align: center;
+                font-size: 2rem;
             }
 
             form {
-                border: 400px solid rgb(193, 193, 194);
-                
-            }
-
-            input[id=username] {
-                
+                border: 1px solid rgb(193, 193, 194);
+                padding: 20px;
                 width: 50%;
-                padding: 12px 20px;
-                margin: 8px 0;
-                display: inline-block;
-                order: 1px solid #ccc;
+                margin: 0 auto;
                 box-sizing: border-box;
             }
-            
+
+            input[id=username],
             input[type=password] {
-                
-                width: 50%;
+                width: 100%;
                 padding: 12px 20px;
                 margin: 8px 0;
                 display: inline-block;
-                order: 1px solid #ccc;
+                border: 1px solid #ccc;
                 box-sizing: border-box;
             }
 
@@ -50,36 +43,53 @@
                 margin: 10px 0;
                 border: none;
                 cursor: pointer;
-                width: 70%;
+                width: 100%;
+                font-size: medium;
             }
 
-            
             button:hover {
                 opacity: 0.9;
-                
             }
-            
+
+            .container {
+                text-align: center;
+            }
+
+            .checkbox-container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 10px 0;
+                font-size: large;
+            }
+
         </style>
     </head>
     <body>
-    <div style="font-size: x-large;">
-    <form action="catalog.html" method="get">
-        <div class="image">
-            <img src="C:\Users\aafta\OneDrive\Documents\FWP\Week 1\avatar.jpeg" alt="avatar" class="avatar";>
-        </div>
-       
-        <h1>Login Form</h1>
-        <center>
-        <label for="username"><b>Username:</b></label>
-        <input type="text" placeholder="Enter username" id="username" name="Username" style=""><br>
-        <label for="password"><b>Password:</b></label>
-        <input type="password" placeholder="Enter password" id="password" name="password"><br><br>
-        </center>
-       <center><button type="submit" style="font-size: medium;">Login</button><br></center>
+        <div style="font-size: x-large;">
+            <form action="catalog.html" method="get">
+                <div class="image">
+                    <img src="avatar.jpg" alt="avatar" class="avatar">
+                </div>
+                
+                <h1>Login Form</h1>
 
-       <center><button type="reset" style="font-size: medium;">Cancel</button></center>
-        <input type="checkbox" id="checked" name="Remember">Remember me
-    </form>
-    </div>
+                <div class="container">
+                    <label for="username"><b>Username:</b></label>
+                    <input type="text" placeholder="Enter username" id="username" name="Username"><br>
+
+                    <label for="password"><b>Password:</b></label>
+                    <input type="password" placeholder="Enter password" id="password" name="password"><br><br>
+                    
+                    <button type="submit">Login</button><br>
+                    <button type="reset">Cancel</button>
+                    
+                    <div class="checkbox-container">
+                        <label for="checked"><b>Remember me</b></label>
+                        <input type="checkbox" id="checked" name="Remember">
+                    </div>
+                </div>
+            </form>
+        </div>
     </body>
 </html>
